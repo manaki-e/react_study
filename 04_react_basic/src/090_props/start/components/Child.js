@@ -5,12 +5,13 @@
 
 import "./Child.css";
 
-const Child = () => {
-  return (
-    <div className="component">
-      <h3>Hello Component</h3>
-    </div>
-  );
+const Child = (props) => {
+	const className = `p-4 text-${props.color}-500 border-4 border-solid border-${props.color}-500`;
+	return (
+		<div className={className}>
+			<h3>Hello Component</h3>
+		</div>
+	);
 };
 
 export default Child;
