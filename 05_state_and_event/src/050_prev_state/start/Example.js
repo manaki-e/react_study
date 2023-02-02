@@ -11,11 +11,11 @@ const Example = () => {
 	return (
 		<>
 			<p>現在のカウント数：{default_value}</p>
-			<button className="border py-2 py-4" onClick={countUp}>
+			<button className="border py-2 px-6 border-black bg-gray-500" onClick={countUp}>
 				+
 			</button>
-			<button className="border py-2 py-4" onClick={countDown}>
-				+
+			<button className="border py-2 px-6 border-black bg-gray-500" onClick={countDown}>
+				-
 			</button>
 		</>
 	);
